@@ -1,4 +1,4 @@
-### The Prisoner's Dilemma
+# The Prisoner's Dilemma
 
 ## History
 
@@ -26,3 +26,23 @@ The "dilemma" part of this problem arrises when you consider how two rational hu
 ## One-Time vs. Iterative 
 
 In the example provided above, the scenario only occurs once and the outcome is determined immediately. The "winning" strategy is to betray the other person. But what if we allow for multiple iterations of the same scenario? Does the optimal strategy change, and if so what is the best strategy? 
+
+## Robert Axelrod
+
+In the early 1980's the optimal strategy for the iterative scenario was still unknown, and mathematicians were still struggling to formally provide an answer. Although an agreed-upon solution did not exist, several political scientists, mathematicians, and computer programmers believed they had studied the prisoner's dilemma well enough that they had a winning strategy. So, Robert Axelrod organized a competition: anyone could submit their computer program, and when entries were closed Axelrod would run each program against each other program 200 times to find the winner. 
+
+At the time Axelrod believed a winning strategy would consist of thousands or tens of thousands of lines of code, utilizing behavioural analytics of the other player's moves and complex decision algorithms.
+
+He was, like most everyone else, shocked to discover the optimal solution could be expressed in only a few lines of code. 
+
+## The Code
+
+In this repo you will find a base class which implements everything any computer program needs to participate -- except, of course, how to decide what move to make.
+
+The [`prisonersdilemma.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/prisonersdilemma.h) file implements this base class, with a pure `virtual` method `SendMyMove()`, which is left for each individual program to create. All of the data tracking is done by the `Dilemma` class, and the simulation can be run from the [`runsimulation.cpp`](https://github.com/aalogancheney/PrisonersDilema/blob/master/runsimulation.cpp) file. A `makefile` is also provided for easy compilation.
+
+Several strategies have been implemented here, namely [`lucifer.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/lucifer.h), [`jesus.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/jesus.h), [`fiftyfifty.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/fiftyfifty.h), and [`titfortat.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/titfortat.h).  None of these implemetations do anything particularly special, but one of them does contain the optimal strategy (mouse over below to reveal the winning strategy).
+
+! TitForTat
+
+ 
