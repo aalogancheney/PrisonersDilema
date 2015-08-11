@@ -1,13 +1,13 @@
 #ifndef _FIFTY_FIFTY_H
 #define _FIFTY_FIFTY_H
 
-#include "prisonersdilema.h"
+#include "prisonersdilemma.h"
 #include <cstdlib>
 
-class FiftyFifty : public Dilema
+class FiftyFifty : public Dilemma
 {
 	public:
-		FiftyFifty() : Dilema() { }
+		FiftyFifty() : Dilemma() { }
 		~FiftyFifty() { }
 
 	public:

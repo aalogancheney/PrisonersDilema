@@ -1,12 +1,12 @@
 #ifndef _JESUS_H
 #define _JESUS_H
 
-#include "prisonersdilema.h"
+#include "prisonersdilemma.h"
 
-class Jesus : public Dilema
+class Jesus : public Dilemma
 {
 	public:
-		Jesus() : Dilema() { }
+		Jesus() : Dilemma() { }
 		~Jesus() { }
 
 	public:

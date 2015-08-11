@@ -1,12 +1,12 @@
 #ifndef _LUCIFER_H
 #define _LUCIFER_H
 
-#include "prisonersdilema.h"
+#include "prisonersdilemma.h"
 
-class Lucifer : public Dilema
+class Lucifer : public Dilemma
 {
 	public:
-		Lucifer() : Dilema() { }
+		Lucifer() : Dilemma() { }
 		~Lucifer() { }
 
 	public:

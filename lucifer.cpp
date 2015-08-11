@@ -1,14 +1,8 @@
 #include "lucifer.h"
 
-Lucifer::Lucifer() : Dilema()
-{
+Lucifer::Lucifer() : Dilema() { }
 
-}
-
-Lucifer::~Lucifer()
-{
-
-}
+Lucifer::~Lucifer() { }
 
 Choice Lucifer::SendMyMove()
 {

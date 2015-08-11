@@ -1,14 +1,8 @@
 #include "jesus.h"
 
-Jesus::Jesus() : Dilema()
-{
+Jesus::Jesus() : Dilema() { }
 
-}
-
-Jesus::~Jesus()
-{
-
-}
+Jesus::~Jesus() { }
 
 Choice Jesus::SendMyMove()
 {

@@ -1,14 +1,14 @@
 #ifndef _TIT_FOR_TAT_H
 #define _TIT_FOR_TAT_H
 
-#include "prisonersdilema.h"
+#include "prisonersDilemma.h"
 #include <vector>
 #include <cstdlib>
 
-class TitForTat : public Dilema
+class TitForTat : public Dilemma
 {
 	public:
-		TitForTat() : Dilema() { _forgivenessPercentage = 1; }
+		TitForTat() : Dilemma() { _forgivenessPercentage = 1; }
 		~TitForTat() { }
 
 	public:
