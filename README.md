@@ -8,11 +8,11 @@ The Prisoner's Dilemma is a classical problem spanning several areas of study, i
 
 There are many versions of the Prisoner's Dilemma, but a traditional example proceeds as follows:
 
-Two strangers have agreed to join forces in an attempt to rob a bank, but are unsuccessful and caught by authorities. The two theives are placed into separate interrogation rooms, and a detective approaches each individual with the following deal:
+>Two strangers have agreed to join forces in an attempt to rob a bank, but are unsuccessful and caught by authorities. The two theives are placed into separate interrogation rooms, and a detective approaches each individual with the following deal:
 
-"We have enough evidence to put both of you behind bars for at least 1 year, but we would like to have a longer sentence for at least one of you. If you agree to testify against your partner and they don't turn on you, we will let you go and they will spend 3 years in prison. If they testify against you and you stay silent, however, you will go to prison for 3 years and they will go free. In the case you both testify against each other, you will each spend 2 years in prison."
+>"We have enough evidence to put both of you behind bars for at least 1 year, but we would like to have a longer sentence for at least one of you. If you agree to testify against your partner and they don't turn on you, we will let you go and they will spend 3 years in prison. If they testify against you and you stay silent, however, you will go to prison for 3 years and they will go free. In the case you both testify against each other, you will each spend 2 years in prison."
 
-You are not allowed to speak to your accomplice; what do you do?
+>You are not allowed to speak to your accomplice; what do you do?
 
 To summarize the scenario, we can look at the potential outcomes in a decision matrix for two criminals, Bonnie and Clyde:
 
@@ -43,5 +43,5 @@ The [`prisonersdilemma.h`](https://github.com/aalogancheney/PrisonersDilema/blob
 
 Several strategies have been implemented here, namely [`lucifer.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/lucifer.h), [`jesus.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/jesus.h), [`fiftyfifty.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/fiftyfifty.h), and [`titfortat.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/titfortat.h).  None of these implemetations do anything particularly special, but one of them does contain the optimal strategy (mouse over below to reveal the winning strategy).
 
->! TitForTat
+>!TitForTat
 
