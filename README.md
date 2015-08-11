@@ -43,6 +43,6 @@ The [`prisonersdilemma.h`](https://github.com/aalogancheney/PrisonersDilema/blob
 
 Several strategies have been implemented here, namely [`lucifer.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/lucifer.h), [`jesus.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/jesus.h), [`fiftyfifty.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/fiftyfifty.h), and [`titfortat.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/titfortat.h).  None of these implemetations do anything particularly special, but one of them does contain the optimal strategy (mouse over below to reveal the winning strategy).
 
->!TitForTat
+> ! TitForTat
 
 Adding more text
