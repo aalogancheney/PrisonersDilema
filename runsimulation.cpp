@@ -3,16 +3,23 @@
 #define DEBUG 1
 
 #include "log.h"
+#include "titfortat.h"
 #include "jesus.h"
 #include "lucifer.h"
-#include "titfortat.h"
 #include "fiftyfifty.h"
 #include <iostream>
+#include <string>
 
 void RunSingleSimulation(Dilemma *player1, Dilemma *player2, int &player1Score, int &player2Score);
 
 int main(int argc, char *argv[])
 {
+	// Use inheritence to allocate two new Dilemma pointers, each pointing to an implemented strategy.
+	Dilemma *player1 = new Jesus();
+	Dilemma *player2 = new TitForTat();
+	int player1Score = 0;
+	int player2Score = 0;
+
 	int numberOfIterations;
 	std::cout << "How many iterations would you like to run?" << std::endl;
 	std::cin >> numberOfIterations;
@@ -22,12 +29,6 @@ int main(int argc, char *argv[])
 		std::cerr << "Please enter a positive number greater than 0." << std::endl;
 		return -1;
 	}
-
-	// Use inheritence to allocate two new Dilemma pointers, each pointing to an implemented strategy.
-	Dilemma *player1 = new Jesus();
-	Dilemma *player2 = new Jesus();
-	int player1Score = 0;
-	int player2Score = 0;
 
 	for(int i = 0; i < numberOfIterations; ++i)
 	{

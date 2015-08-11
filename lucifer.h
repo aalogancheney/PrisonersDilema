@@ -6,15 +6,11 @@
 class Lucifer : public Dilemma
 {
 	public:
-		Lucifer() : Dilemma() { }
-		~Lucifer() { }
+		Lucifer();
+		~Lucifer();
 
 	public:
-		Choice SendMyMove()
-		{
-			Choice myMove = RETALIATE;
-			return myMove;
-		}
+		Choice SendMyMove();
 };
 
 #endif

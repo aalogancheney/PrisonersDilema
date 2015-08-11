@@ -6,15 +6,11 @@
 class Jesus : public Dilemma
 {
 	public:
-		Jesus() : Dilemma() { }
-		~Jesus() { }
+		Jesus();
+		~Jesus();
 
 	public:
-		Choice SendMyMove()
-		{
-			Choice myMove = COOPERATE;
-			return myMove;
-		}
+		Choice SendMyMove();
 };
 
 #endif

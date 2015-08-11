@@ -1,6 +1,6 @@
 #include "lucifer.h"
 
-Lucifer::Lucifer() : Dilema() { }
+Lucifer::Lucifer() : Dilemma() { }
 
 Lucifer::~Lucifer() { }
 

@@ -1,6 +1,6 @@
 #include "jesus.h"
 
-Jesus::Jesus() : Dilema() { }
+Jesus::Jesus() : Dilemma() { }
 
 Jesus::~Jesus() { }
 

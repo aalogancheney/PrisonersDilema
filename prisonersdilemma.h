@@ -11,33 +11,26 @@ enum Choice { COOPERATE, RETALIATE };
 class Dilemma
 {
 	public:
-		Dilemma();
-		virtual ~Dilemma();
+		Dilemma() { }
+		virtual ~Dilemma() { }
 
 	public:
 		virtual Choice SendMyMove() = 0;
 
 	public:
-		void RecordMyMove(Choice myMove);
-		void RecordTheirMove(Choice theirMove);
+		void RecordMyMove(Choice myMove)
+		{
+			_myMoves.push_back(myMove);
+		}
+
+		void RecordTheirMove(Choice theirMove)
+		{
+			_theirMoves.push_back(theirMove);
+		}
 
 	protected:
 		std::vector<Choice> _myMoves;
 		std::vector<Choice> _theirMoves;
 };
-
-Dilemma::Dilemma() { }
-
-Dilemma::~Dilemma() { }
-
-void Dilemma::RecordMyMove(Choice myMove)
-{
-	_myMoves.push_back(myMove);
-}
-
-void Dilemma::RecordTheirMove(Choice theirMove)
-{
-	_theirMoves.push_back(theirMove);
-}
 
 #endif

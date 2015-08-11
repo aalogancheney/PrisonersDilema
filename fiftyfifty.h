@@ -7,23 +7,11 @@
 class FiftyFifty : public Dilemma
 {
 	public:
-		FiftyFifty() : Dilemma() { }
-		~FiftyFifty() { }
+		FiftyFifty();
+		~FiftyFifty();
 
 	public:
-		Choice SendMyMove()
-		{
-			Choice myChoice;
-			if(rand() % 100 < 50)
-			{
-				myChoice = RETALIATE;
-			}
-			else
-			{
-				myChoice = COOPERATE;
-			}
-			return myChoice;
-		}
+		Choice SendMyMove();
 };
 
 #endif

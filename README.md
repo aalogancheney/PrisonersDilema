@@ -37,12 +37,9 @@ He was, like most everyone else, shocked to discover the optimal solution could 
 
 ## The Code
 
-In this repo you will find a base class which implements everything any computer program needs to participate -- except, of course, how to decide what move to make.
+In this repo you will find a base class which implements everything any C++ program needs to participate -- except, of course, how to decide what move to make.
 
 The [`prisonersdilemma.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/prisonersdilemma.h) file implements this base class, with a pure `virtual` method `SendMyMove()`, which is left for each individual program to create. All of the data tracking is done by the `Dilemma` class, and the simulation can be run from the [`runsimulation.cpp`](https://github.com/aalogancheney/PrisonersDilema/blob/master/runsimulation.cpp) file. A `makefile` is also provided for easy compilation.
 
-Several strategies have been implemented here, namely [`lucifer.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/lucifer.h), [`jesus.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/jesus.h), [`fiftyfifty.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/fiftyfifty.h), and [`titfortat.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/titfortat.h).  None of these implemetations do anything particularly special, but one of them does contain the optimal strategy (mouse over below to reveal the winning strategy).
+Several strategies have been implemented here, namely [`lucifer.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/lucifer.h), [`jesus.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/jesus.h), [`fiftyfifty.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/fiftyfifty.h), and [`titfortat.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/titfortat.h).  None of these implemetations do anything particularly special, but one of them does contain the optimal strategy...
 
-> ! TitForTat
-
-Adding more text

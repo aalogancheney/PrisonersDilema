@@ -8,27 +8,11 @@
 class TitForTat : public Dilemma
 {
 	public:
-		TitForTat() : Dilemma() { _forgivenessPercentage = 1; }
-		~TitForTat() { }
+		TitForTat();
+		~TitForTat();
 
 	public:
-		Choice SendMyMove()
-		{
-			Choice myMove;
-			if(_myMoves.empty())
-			{
-				myMove = COOPERATE;
-			}
-			else
-			{
-				myMove = _theirMoves.back();
-				if(myMove == RETALIATE && (rand() % 100 < _forgivenessPercentage))
-				{
-					myMove = COOPERATE;
-				}
-			}
-			return myMove;
-		}
+		Choice SendMyMove();
 
 	private:
 		int _forgivenessPercentage;
