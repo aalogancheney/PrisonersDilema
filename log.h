@@ -6,7 +6,7 @@
 #if DEBUG
 	#define LOG(x) do { std::cerr << x << std::endl; } while(0);
 #else
-	#define LOG(x) 
+	#define LOG(x)
 #endif
 
 #endif

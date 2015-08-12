@@ -7,12 +7,15 @@ EXECUTABLE = simulation
 all: $(SOURCES) $(EXECUTABLE)
     
 $(EXECUTABLE): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) $^ -o $@
+	$(CXX) $(CXXFLAGS) $^ $(MAIN) -o $@
 
 .cpp.o:
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-.PHONY: clean
+.PHONY: clean run
 
 clean:
 	rm $(OBJECTS) $(EXECUTABLE)
+
+run: $(EXECUTABLE)
+	./$<
