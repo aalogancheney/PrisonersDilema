@@ -33,7 +33,7 @@ In the early 1980's the optimal strategy for the iterative scenario was still un
 
 At the time Axelrod believed a winning strategy would consist of thousands or tens of thousands of lines of code, utilizing behavioural analytics of the other player's moves and complex decision algorithms.
 
-He was, like most everyone else, shocked to discover the optimal solution could be expressed in only a few lines of code. 
+He was, like most everyone else, shocked to discover the best basic solution could be expressed in only a few lines of code. 
 
 ## The Code
 
@@ -44,3 +44,9 @@ The [`prisonersdilemma.h`](https://github.com/aalogancheney/PrisonersDilema/blob
 Several strategies have been implemented here, namely [`lucifer.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/lucifer.h), [`jesus.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/jesus.h), [`fiftyfifty.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/fiftyfifty.h), and [`titfortat.h`](https://github.com/aalogancheney/PrisonersDilema/blob/master/titfortat.h).  None of these implemetations do anything particularly special, but one of them does contain the optimal strategy...
 
 To create your own strategy, simply implement your own `class` that publically derives from `Dilemma` and insert your strategy on line [18](https://github.com/aalogancheney/PrisonersDilema/blob/master/runsimulation.cpp#L18).
+
+## Further Reading
+
+I was inspired to put this project together after listening to [radiolab.org](radiolab.org)'s program entitled [The Good Show](http://www.radiolab.org/story/103951-the-good-show/), which focused on *why* human beings exhibit kindness and altruism toward total strangers and how this trait counterintuitively conforms to the Theory of Evolution. 
+
+There are many variations on the prisoner's dilema that alter the payouts, the scenario, and the circumstances under which the "game" is played. Of particular interest is the story of a research team from Southampton University. On the 20th anniversary of the original competition a new tournament was held, but with a twist: teams were allowed to submit multiple submissions, and the team from Southampton submitted a total of 60 programs. Using the first several turns to establish contact, the 60 programs could discern whether they were pitted against another program or a sister-program. In the case the two programs "knew" each other, one would sacrifice itself by always cooperating and the other would always betray, which, in the end, caused several of their programs to appear near the top of the leaderboard, standing on the shoulders of those programs that sacrificed themselves. You can find the results of this competition [here](http://www.prisoners-dilemma.com/results/cec04/ipd_cec04_full_run.html). 
