@@ -20,7 +20,7 @@ To summarize the scenario, we can look at the potential outcomes in a decision m
 |:------------------------:|:---------------------:|:---------------------:|
 |  **Clyde Stays Silent**  | Bonnie = 1, Clyde = 1 | Bonnie = 0, Clyde = 3 |
 | **Clyde Betrays Bonnie** | Bonnie = 3, Clyde = 0 | Bonnie = 2, Clyde = 2 |
-| **Grandpa**              | Why are you in my simulation? | Oh well       |
+| *Grandpa*           | Why are you in my simulation? | Oh well       |
 
 The "dilemma" part of this problem arrises when you consider how two rational human beings would act in this situation. Surely no one would feel any kind of loyalty toward someone they just met, and with the potential of spending 3 years in prison most rational people would choose to betray their co-conspiritor. However, upon further investigation, it is in both parties interest to stay silent! While each person would spend 1 year in prison, the sentence would be a third of the total potential time, and half of the time if they both betray each other. Yet human intuition says we should betray the other person with the hopes of going free and avoiding 3 years in prison. 
 
